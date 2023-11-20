@@ -25,7 +25,7 @@ SELECT COUNT(g.game)
 FROM game_sales g
 LEFT JOIN reviews r
 ON g.game = r.game
-WHERE r.critic_score IS NULL AND r.user_score IS NULL;
+WHERE r.critic_score='' AND r.user_score='';  
 
 -- Years that video game critics loved
 
